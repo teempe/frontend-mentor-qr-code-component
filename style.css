@@ -67,6 +67,7 @@ body {
     flex-direction: column;
     row-gap: 1.6rem;
     text-align: center;
+    padding: 0rem 1.6rem;
 }
 
 .qr-card__header {
