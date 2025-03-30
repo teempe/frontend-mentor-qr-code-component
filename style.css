@@ -1,0 +1,78 @@
+:root {
+    --ff-base: "Outfit", sans-serif;
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    --color-slate-900: #1F314F;
+    --color-slate-500: #68778D;
+    --color-slate-300: #D5E1EF;
+    --color-white: #FFF;
+
+    --spacing-sm: 1.6rem;
+    --spacing-md: 2.4rem;
+    --spacing-lg: 4rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: var(--ff-base);
+    font-optical-sizing: auto;
+    font-weight: var(--fw-regular);
+    font-style: normal;
+    font-size: 1.5rem;
+    letter-spacing: 0.02rem;
+    line-height: 1.4em;
+    color: var(--color-slate-500);
+    background-color: var(--color-slate-300);
+
+    /* center content on page */
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+
+.qr-card {
+    max-width: 32rem;
+    padding: 1.6rem 1.6rem 4rem;
+    border-radius: 2rem;
+    
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.4rem;
+
+    background-color: var(--color-white);
+    box-shadow: 0rem 2.5rem 2.5rem 0rem rgba(0, 0, 0, 0.05);
+}
+
+.qr-card__code {
+    border-radius: 1rem;
+}
+
+.qr-card__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.6rem;
+    text-align: center;
+}
+
+.qr-card__header {
+    font-weight: var(--fw-bold);
+    font-size: 2.2rem;
+    letter-spacing: 0rem;
+    line-height: 1.2em;
+    color: var(--color-slate-900);
+}
